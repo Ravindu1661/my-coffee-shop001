@@ -1,0 +1,58 @@
+Created At: 2026-07-22T14:32:03Z
+Completed At: 2026-07-22T14:32:03Z
+File Path: `file:///E:/My%20tools/cofee_web_02/src/components/Navbar.tsx`
+Total Lines: 125
+Total Bytes: 4524
+Showing lines 1 to 50
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: import { useEffect, useState } from "react";
+2: import { motion, AnimatePresence } from "framer-motion";
+3: import { Menu, X, Search, ShoppingCart, User } from "lucide-react";
+4: import { navLinks } from "../data/content";
+5: 
+6: export default function Navbar() {
+7:   const [scrolled, setScrolled] = useState(false);
+8:   const [open, setOpen] = useState(false);
+9: 
+10:   useEffect(() => {
+11:     const onScroll = () => setScrolled(window.scrollY > 24);
+12:     onScroll();
+13:     window.addEventListener("scroll", onScroll);
+14:     return () => window.removeEventListener("scroll", onScroll);
+15:   }, []);
+16: 
+17:   const handleClick = (href: string) => {
+18:     setOpen(false);
+19:     const el = document.querySelector(href);
+20:     if (el) el.scrollIntoView({ behavior: "smooth" });
+21:   };
+22: 
+23:   return (
+24:     <motion.header
+25:       initial={{ y: -80, opacity: 0 }}
+26:       animate={{ y: 0, opacity: 1 }}
+27:       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+28:       className={`fixed top-0 z-50 w-full transition-all duration-500 ${scrolled
+29:           ? "glass py-3"
+30:           : "bg-transparent py-6"
+31:         }`}
+32:     >
+33:       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
+34:         <a
+35:           href="#home"
+36:           onClick={(e) => {
+37:             e.preventDefault();
+38:             handleClick("#home");
+39:           }}
+40:           className="font-display text-2xl font-bold text-white tracking-wide"
+41:         >
+42:           Coffee
+43:         </a>
+44: 
+45:         <div className="hidden lg:flex items-center rounded-full bg-black/20 backdrop-blur-md border border-white/10 p-1.5 px-3">
+46:           <ul className="flex items-center gap-2">
+47:             {navLinks.map((link, idx) => (
+48:               <li key={link.label}>
+49:                 <a
+50:                   href={link.href}
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

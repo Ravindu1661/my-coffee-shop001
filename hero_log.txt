@@ -1,0 +1,45 @@
+The USER performed the following action:
+Show the contents of file e:\My tools\cofee_web_02\src\components\Hero.tsx from lines 1 to 37
+File Path: `file:///e:/My%20tools/cofee_web_02/src/components/Hero.tsx`
+Total Lines: 336
+Total Bytes: 14384
+Showing lines 1 to 37
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: import { useEffect, useRef, useState } from "react";
+2: import { ChevronDown } from "lucide-react";
+3: import FloatingParticles from "./FloatingParticles";
+4: 
+5: const TOTAL_FRAMES = 216;
+6: const FRAME_PREFIX = "ezgif-frame-";
+7: const FRAME_EXT = ".jpg";
+8: const FRAME_PATH = "/sequence/";
+9: 
+10: function pad(n: number) {
+11:   return String(n).padStart(3, "0");
+12: }
+13: 
+14: function frameSrc(i: number) {
+15:   return `${FRAME_PATH}${FRAME_PREFIX}${pad(i + 1)}${FRAME_EXT}`;
+16: }
+17: 
+18: export default function Hero() {
+19:   const canvasRef = useRef<HTMLCanvasElement>(null);
+20:   const containerRef = useRef<HTMLDivElement>(null);
+21:   const [isLoaded, setIsLoaded] = useState(false);
+22:   const [loadProgress, setLoadProgress] = useState(0);
+23: 
+24:   // Scroll variables
+25:   const targetFrameRef = useRef(0);
+26:   const smoothFrameRef = useRef(0);
+27:   const lastFrameRef = useRef(-1);
+28:   const imagesRef = useRef<HTMLImageElement[]>([]);
+29: 
+30:   // Scroll progress for text phases
+31:   const [scrollProgress, setScrollProgress] = useState(0);
+32: 
+33:   useEffect(() => {
+34:     // Preload sequence frames
+35:     const preloadedImages: HTMLImageElement[] = [];
+36:     let loadedCount = 0;
+37: 
+
