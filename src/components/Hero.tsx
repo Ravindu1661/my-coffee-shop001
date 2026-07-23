@@ -4,7 +4,7 @@ import FloatingParticles from "./FloatingParticles";
 
 const TOTAL_FRAMES = 79;
 const FRAME_PREFIX = "Luxury_coffee_commercial_animation_1080p_202607221739-enhanced_";
-const FRAME_PATH = "/sequence5/";
+const FRAME_PATH = "./sequence5/";
 
 function frameSrc(i: number) {
   if (i === 0) return `${FRAME_PATH}FIRST.png`;
