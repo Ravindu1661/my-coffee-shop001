@@ -15,7 +15,7 @@ const cartItems = [
     tagline: "Our Icon",
     price: 9.0,
     quantity: 1,
-    image: "/images/signature_latte.png",
+    image: "./images/signature_latte.png",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const cartItems = [
     tagline: "Slow & Refined",
     price: 7.0,
     quantity: 1,
-    image: "/images/cold_brew.png",
+    image: "./images/cold_brew.png",
   },
 ];
 
@@ -79,7 +79,7 @@ export default function CartDrawer({ isOpen, onClose }: CartDrawerProps) {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
-                src="/images/logo_coffee (2).png"
+                src="./images/logo_coffee (2).png"
                 alt="Elite Coffee Logo"
                 className="h-28 w-auto object-contain filter drop-shadow-[0_8px_16px_rgba(245,169,98,0.15)]"
               />

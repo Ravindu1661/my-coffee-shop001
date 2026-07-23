@@ -7,7 +7,7 @@ export default function CoffeeCollection() {
     <section id="collection" className="relative bg-[#120703] py-28 lg:py-36 overflow-hidden">
       {/* Subtle Logo Watermark Background */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.03]">
-        <img src="/images/logo_coffee (2).png" alt="Logo Watermark" className="w-full max-w-[800px] object-contain grayscale" />
+        <img src="./images/logo_coffee (2).png" alt="Logo Watermark" className="w-full max-w-[800px] object-contain grayscale" />
       </div>
 
       <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[#120703] to-transparent z-10" />

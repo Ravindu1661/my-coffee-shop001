@@ -89,7 +89,7 @@ export default function Testimonials() {
       {/* ── Full-bleed background ── */}
       <div className="absolute inset-0">
         <img
-          src="/images/Testimonials_back.png"
+          src="./images/Testimonials_back.png"
           alt="Testimonials Background"
           className="h-full w-full object-cover object-center"
         />

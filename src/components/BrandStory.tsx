@@ -74,7 +74,7 @@ export default function BrandStory() {
               className="w-full h-full"
             >
               <img
-                src="/images/luxury_coffee_story.png"
+                src="./images/luxury_coffee_story.png"
                 alt="Surreal Coffee Masterpiece"
                 className="h-full w-full object-cover lg:object-contain object-right-bottom scale-[1.1] lg:scale-[1.05]"
                 loading="lazy"

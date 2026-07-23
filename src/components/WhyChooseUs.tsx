@@ -197,7 +197,7 @@ export default function WhyChooseUs() {
       {/* Section background */}
       <div className="absolute inset-0">
         <img
-          src="/images/why_chose_us_back.png"
+          src="./images/why_chose_us_back.png"
           alt=""
           className="h-full w-full object-cover opacity-20"
         />

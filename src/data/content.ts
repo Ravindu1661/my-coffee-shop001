@@ -12,7 +12,7 @@ export const products = [
     description:
       "A concentrated shot of pure intensity — velvety crema atop notes of dark chocolate and roasted hazelnut.",
     price: "$6",
-    image: "/images/espresso.png",
+    image: "./images/espresso.png",
   },
   {
     name: "Cappuccino",
@@ -20,7 +20,7 @@ export const products = [
     description:
       "Equal harmony of espresso, steamed milk and airy microfoam, finished with a dusting of cocoa.",
     price: "$7",
-    image: "/images/cappuccino.png",
+    image: "./images/cappuccino.png",
   },
   {
     name: "Latte",
@@ -28,7 +28,7 @@ export const products = [
     description:
       "A gentle embrace of espresso and velvet steamed milk, poured with delicate hand-crafted art.",
     price: "$7",
-    image: "/images/latte.png",
+    image: "./images/latte.png",
   },
   {
     name: "Mocha",
@@ -36,7 +36,7 @@ export const products = [
     description:
       "Single-origin espresso meets Belgian dark chocolate, layered beneath clouds of whipped cream.",
     price: "$8",
-    image: "/images/mocha.png",
+    image: "./images/mocha.png",
   },
   {
     name: "Cold Brew",
@@ -44,7 +44,7 @@ export const products = [
     description:
       "Steeped for eighteen hours over ice for a naturally smooth, low-acid, deeply aromatic finish.",
     price: "$7",
-    image: "/images/cold_brew.png",
+    image: "./images/cold_brew.png",
   },
   {
     name: "Signature Iced Latte",
@@ -52,7 +52,7 @@ export const products = [
     description:
       "The house signature — cascading espresso over milk and ice, our most celebrated creation.",
     price: "$9",
-    image: "/images/signature_latte.png",
+    image: "./images/signature_latte.png",
   },
 ];
 
@@ -137,27 +137,27 @@ export const experienceSlides = [
   {
     title: "The Origin",
     subtitle: "High-altitude farms, hand-picked cherries",
-    image: "/images/coffee_craft_story.png",
+    image: "./images/coffee_craft_story.png",
   },
   {
     title: "The Roast",
     subtitle: "Precision fire, patient craft",
-    image: "/images/midnight_cascade.png",
+    image: "./images/midnight_cascade.png",
   },
   {
     title: "The Space",
     subtitle: "Designed for stillness and indulgence",
-    image: "/images/arctic_drift.png",
+    image: "./images/arctic_drift.png",
   },
   {
     title: "The Ritual",
     subtitle: "An experience, poured slowly",
-    image: "/images/caramel_frost.png",
+    image: "./images/caramel_frost.png",
   },
   {
     title: "The Moment",
     subtitle: "Where every evening lingers a little longer",
-    image: "/images/signature_latte.png",
+    image: "./images/signature_latte.png",
   },
 ];
 
